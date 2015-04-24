@@ -1,0 +1,28 @@
+{
+  "name": "express-boilerplate",
+  "version": "0.0.0",
+  "description": "ExpressJS Boilerplate for Starters",
+  "main": "/server/server.js",
+  "scripts": {
+    "start": "nodemon server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/itsvicsoto/express-boilerplate.git"
+  },
+  "keywords": [
+    "boilerplate",
+    "angularjs",
+    "expressjs"
+  ],
+  "author": "Victor Soto",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/itsvicsoto/express-ng-boilerplate/issues"
+  },
+  "homepage": "https://github.com/itsvicsoto/express-ng-boilerplate",
+  "dependencies": {
+    "express": "~4.10.6"
+  }
+}

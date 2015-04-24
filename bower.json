@@ -1,0 +1,22 @@
+{
+  "name": "express-boilerplate",
+  "version": "0.0.0",
+  "authors": [
+    "Vic Soto <itsvicsoto@gmail.com>"
+  ],
+  "description": "Plain ExpressJS Boilerplate",
+  "license": "MIT",
+  "homepage": "itsvicsoto.github.io/express-boilerplate/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angularjs": "~1.3.7",
+    "ui-router": "~0.2.13",
+    "bootstrap-sass": "~3.3.4"
+  }
+}
