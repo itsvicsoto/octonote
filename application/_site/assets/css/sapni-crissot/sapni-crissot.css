@@ -103,3 +103,12 @@ html, body {
     bottom: 0;
   }
 }
+/*------------------------------------*\
+    #CALLOUT
+\*------------------------------------*/
+/* line 100, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
+.callout {
+  padding: 20px 0 20px 0;
+  background: #373737;
+  color: #ffe736;
+}

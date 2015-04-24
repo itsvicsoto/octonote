@@ -92,3 +92,13 @@ $spc-masthead-font-color: #FFE736; // yellow
         }
 
 }
+
+/*------------------------------------*\
+    #CALLOUT
+\*------------------------------------*/
+
+.callout {
+    padding: 20px 0 20px 0;
+    background: $spc-gray-bg;
+    color: $spc-masthead-font-color;
+}
