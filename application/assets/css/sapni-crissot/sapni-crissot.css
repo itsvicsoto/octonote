@@ -60,23 +60,39 @@ html, body {
 /* line 53, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
 .masthead__announcement {
   position: absolute;
-  bottom: 0;
+  bottom: 20px;
   width: 100%;
 }
 
+/* line 59, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
+.masthead__scroll-down {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #626262;
+  text-align: center;
+}
+/* line 66, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
+.masthead__scroll-down > a {
+  color: #D6D6D6;
+  font-weight: bold;
+  font-size: 75%;
+}
+
 @media screen and (max-width: 480px) {
-  /* line 61, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
+  /* line 75, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
   .masthead {
     height: auto;
   }
 
-  /* line 65, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
+  /* line 79, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
   .masthead__title {
     font-size: 36px;
   }
 
-  /* line 69, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
+  /* line 83, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
   .masthead__announcement {
     position: relative;
+    bottom: 0;
   }
 }

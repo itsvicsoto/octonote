@@ -52,8 +52,22 @@ $spc-masthead-font-color: #FFE736; // yellow
 
     .masthead__announcement {
         position: absolute;
+        bottom: 20px;
+        width: 100%;
+    }
+
+    .masthead__scroll-down {
+        position: absolute;
         bottom: 0;
         width: 100%;
+        background: #626262;
+        text-align: center;
+
+        > a {
+            color: #D6D6D6;
+            font-weight: bold;
+            font-size: 75%;
+        }
     }
 
 @media screen and (max-width: $screen-xs-min) {
@@ -68,6 +82,7 @@ $spc-masthead-font-color: #FFE736; // yellow
 
         .masthead__announcement {
             position: relative;
+            bottom: 0;
         }
 
 }
