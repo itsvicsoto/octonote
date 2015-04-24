@@ -54,17 +54,24 @@ html, body {
 
 /* line 49, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
 .masthead__title {
-  font-size: 72px;
+  font-size: 60px;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
-/* line 53, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
+/* line 55, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
+.masthead__shortdesc {
+  max-width: 400px;
+}
+
+/* line 59, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
 .masthead__announcement {
   position: absolute;
   bottom: 20px;
   width: 100%;
 }
 
-/* line 59, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
+/* line 65, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
 .masthead__scroll-down {
   position: absolute;
   bottom: 0;
@@ -72,7 +79,7 @@ html, body {
   background: #626262;
   text-align: center;
 }
-/* line 66, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
+/* line 72, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
 .masthead__scroll-down > a {
   color: #D6D6D6;
   font-weight: bold;
@@ -80,17 +87,17 @@ html, body {
 }
 
 @media screen and (max-width: 480px) {
-  /* line 75, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
+  /* line 81, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
   .masthead {
     height: auto;
   }
 
-  /* line 79, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
+  /* line 85, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
   .masthead__title {
     font-size: 36px;
   }
 
-  /* line 83, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
+  /* line 89, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
   .masthead__announcement {
     position: relative;
     bottom: 0;

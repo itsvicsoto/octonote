@@ -47,7 +47,13 @@ $spc-masthead-font-color: #FFE736; // yellow
 }
 
     .masthead__title {
-        font-size: 72px;
+          font-size: 60px;
+          font-weight: 300;
+          text-transform: uppercase;
+    }
+
+    .masthead__shortdesc {
+          max-width: 400px;
     }
 
     .masthead__announcement {
