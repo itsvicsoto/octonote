@@ -27,11 +27,10 @@ node_modules
 # Users Environment Variables
 .lock-wscript
 
-_site
+#_site
 .sass-cache
 # Ignore docs files
 _gh_pages
-_site
 .ruby-version
 .sass-cache
 
