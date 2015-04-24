@@ -1,0 +1,73 @@
+@import "../sapni-bootstrap-theme";
+@import "../bootstrap/mixins";
+@import "base";
+
+/*------------------------------------*\
+    VARIABLES
+\*------------------------------------*/
+
+$spc-gray-bg: #373737; // gray
+$spc-masthead-font-color: #FFE736; // yellow
+
+
+/*------------------------------------*\
+    UTILILTY CLASSES
+\*------------------------------------*/
+
+
+.v-align {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+    .v-align-inner {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+
+.fill-h {
+    height: 100%;
+}
+
+.fill-w {
+    width: 100%;
+}
+
+/*------------------------------------*\
+    #HEADER
+\*------------------------------------*/
+
+.masthead {
+    position: relative;
+    height: 100%;
+    background: $spc-gray-bg;
+    color: $spc-masthead-font-color;
+}
+
+    .masthead__title {
+        font-size: 72px;
+    }
+
+    .masthead__announcement {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+@media screen and (max-width: $screen-xs-min) {
+
+    .masthead {
+        height: auto;
+    }
+
+        .masthead__title {
+            font-size: $font-size-h1;
+        }
+
+        .masthead__announcement {
+            position: relative;
+        }
+
+}

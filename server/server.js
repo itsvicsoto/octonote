@@ -20,6 +20,6 @@ app.listen(app.get('port'), function () {
     meta.banner += '\n> -------------------------------------------------- ';
     meta.banner += '\n> ' + meta.description;
     meta.banner += '\n> Running on localhost:' + app.get('port') + '\n';
-    
+
   console.log(meta.banner);
 });

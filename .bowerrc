@@ -1,0 +1,5 @@
+{
+  "directory": "/application/assets/bower_lib",
+  "analytics": false,
+  "timeout": 120000
+}

@@ -1,0 +1,82 @@
+/*------------------------------------*\
+    BASE
+\*------------------------------------*/
+/* line 5, ../../../../source/bootstrap-sass/sapni-crissot/_base.scss */
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 9, ../../../../source/bootstrap-sass/sapni-crissot/_base.scss */
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/*------------------------------------*\
+    VARIABLES
+\*------------------------------------*/
+/*------------------------------------*\
+    UTILILTY CLASSES
+\*------------------------------------*/
+/* line 18, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
+.v-align {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 24, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
+.v-align-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
+.fill-h {
+  height: 100%;
+}
+
+/* line 34, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
+.fill-w {
+  width: 100%;
+}
+
+/*------------------------------------*\
+    #HEADER
+\*------------------------------------*/
+/* line 42, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
+.masthead {
+  position: relative;
+  height: 100%;
+  background: #373737;
+  color: #ffe736;
+}
+
+/* line 49, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
+.masthead__title {
+  font-size: 72px;
+}
+
+/* line 53, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
+.masthead__announcement {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  /* line 61, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
+  .masthead {
+    height: auto;
+  }
+
+  /* line 65, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
+  .masthead__title {
+    font-size: 36px;
+  }
+
+  /* line 69, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
+  .masthead__announcement {
+    position: relative;
+  }
+}

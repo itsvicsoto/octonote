@@ -2,22 +2,24 @@
 layout: default
 ---
 
-<div class="home">
+<header class="masthead">
+  <div class="container fill-h">
+    <div class="v-align">
+      <div class="v-align-inner">
+        <h1 class="masthead__title">Sapni ng Crissot</h1>
+        <p class="lead">
+          A Gathering to revive the Sapni Ng Crissot
+          Literary and Cultural Foundation.
+        </p>
+        <small>Learn more...</small>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="masthead__announcement">
+      <h4>Announcement</h4>
+      <p>There's an event this saturday please come :)..</p>
+    </div>
+  </div>
+</header>
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
