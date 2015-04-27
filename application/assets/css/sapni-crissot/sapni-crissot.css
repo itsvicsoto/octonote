@@ -49,7 +49,7 @@ html, body {
   position: relative;
   height: 100%;
   background: #373737;
-  color: #ffe736;
+  color: #FFE736;
 }
 
 /* line 49, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
@@ -68,10 +68,9 @@ html, body {
 .masthead__announcement {
   position: absolute;
   bottom: 20px;
-  width: 100%;
 }
 
-/* line 65, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
+/* line 64, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
 .masthead__scroll-down {
   position: absolute;
   bottom: 0;
@@ -79,7 +78,7 @@ html, body {
   background: #626262;
   text-align: center;
 }
-/* line 72, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
+/* line 71, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
 .masthead__scroll-down > a {
   color: #D6D6D6;
   font-weight: bold;
@@ -87,17 +86,17 @@ html, body {
 }
 
 @media screen and (max-width: 480px) {
-  /* line 81, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
+  /* line 80, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
   .masthead {
     height: auto;
   }
 
-  /* line 85, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
+  /* line 84, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
   .masthead__title {
-    font-size: 36px;
+    font-size: 46px;
   }
 
-  /* line 89, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
+  /* line 88, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
   .masthead__announcement {
     position: relative;
     bottom: 0;
@@ -106,9 +105,79 @@ html, body {
 /*------------------------------------*\
     #CALLOUT
 \*------------------------------------*/
-/* line 100, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
+/* line 99, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
 .callout {
   padding: 20px 0 20px 0;
   background: #373737;
-  color: #ffe736;
+  color: #FFE736;
+}
+
+/*------------------------------------*\
+    #SECTION
+\*------------------------------------*/
+/* line 111, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
+.section {
+  padding: 30px 0;
+}
+
+/* line 116, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
+.section__header {
+  padding: 0 0 30px 0;
+}
+
+/*------------------------------------*\
+    #SECTION
+\*------------------------------------*/
+/* line 124, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
+.section__content {
+  max-width: 800px;
+  margin: auto;
+  padding-left: 10px;
+  text-align: justify;
+  border-left: 4px solid #FFE736;
+}
+
+/*------------------------------------*\
+    #FOUNDER
+\*------------------------------------*/
+/* line 138, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
+.founder__item {
+  padding-bottom: 20px;
+}
+
+/* line 142, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
+.founder__img {
+  border-radius: 100%;
+}
+
+/* line 146, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
+.founder__hoverTitle {
+  opacity: 0;
+  position: absolute;
+  top: 33%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/*------------------------------------*\
+    #FOUNDER - STATES
+\*------------------------------------*/
+/* line 164, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
+.founder__item:hover > .founder__hoverTitle {
+  opacity: 1;
+}
+
+/*------------------------------------*\
+    #FOOTER
+\*------------------------------------*/
+/* line 177, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
+.footer {
+  padding: 10px 0 0 0;
+  background: #3F3F3F;
+  font-size: 70%;
+  color: #FFF;
 }
