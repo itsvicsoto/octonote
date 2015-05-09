@@ -35,6 +35,7 @@ $spc-masthead-font-color: #FFE736; // yellow
     width: 100%;
 }
 
+
 /*------------------------------------*\
     #HEADER
 \*------------------------------------*/
@@ -42,24 +43,39 @@ $spc-masthead-font-color: #FFE736; // yellow
 .masthead {
     position: relative;
     height: 100%;
-    background: $spc-gray-bg;
+    background-image: url(https://micotrip.files.wordpress.com/2013/03/capture.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    // background: $spc-gray-bg;
     color: $spc-masthead-font-color;
 }
 
-    .masthead__title {
-          font-size: 60px;
-          font-weight: 300;
-          text-transform: uppercase;
+    .masthead__content-container {
+      max-width: 600px;
+      padding: 5px 20px;
+      background: $spc-gray-bg;
     }
 
-    .masthead__shortdesc {
-          max-width: 400px;
-    }
+        .masthead__title {
+              font-size: 60px;
+              font-weight: 300;
+              text-transform: uppercase;
+        }
+
+        .masthead__shortdesc {
+              max-width: 400px;
+        }
 
     .masthead__announcement {
         position: absolute;
-        bottom: 20px;
+        bottom: 25px;
+        background: $spc-gray-bg;
     }
+
+        .masthead__announcement-icons {
+            &:before { padding: 20px; }
+        }
 
     .masthead__scroll-down {
         position: absolute;
@@ -124,10 +140,73 @@ $spc-masthead-font-color: #FFE736; // yellow
 .section__content {
     max-width: 800px;
     margin: auto;
+}
+
+.section__content--border {
+    @extend .section__content;
     padding-left: 10px;
     text-align: justify;
     border-left: 4px solid #FFE736;
 }
+
+/*------------------------------------*\
+    #CARD
+\*------------------------------------*/
+
+.card__list {
+
+}
+
+
+    .card__item {
+        position: relative;
+
+        h1, h2, h3 {
+            margin: 0;
+            padding: 10px;
+            background: #000;
+            color: #FFF;
+            font-family: "Playfair Display";
+            font-weight: bold;
+        }
+
+        p {
+            min-height: 80px;
+            padding: 10px;
+            background: #373737;
+            color: #FFF;
+            font-family: "Playfair Display";
+            font-size: 80%;
+        }
+
+    }
+
+        .card__more {
+            position: absolute;
+            right: 15px;
+            bottom: 13px;
+            padding: 3px;
+            background: #282828;
+            font-family: "Playfair Display";
+            font-size: 50%;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #FFE736;
+        }
+
+        .card__image-holder {
+            height: 300px;
+            width: 100%;
+            // border: 1px solid #EDEDED;
+            // border-bottom: 0;
+        }
+
+            .card__image-item {
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-position: center;
+            }
 
 /*------------------------------------*\
     #FOUNDER

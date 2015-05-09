@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="/assets/css/sapni-crissot/sapni-crissot.css">
   <link rel="stylesheet" href="/assets/css/styleguide/styleguide.css">
   <link href='http://fonts.googleapis.com/css?family=Roboto:900,500,900italic,400italic,100,700italic,300,700,500italic,100italic,300italic,400' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,700italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <link rel="canonical" href="http://yourdomain.com/">
   <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="http://yourdomain.com/feed.xml" />
 </head>
@@ -27,11 +29,13 @@
   <div class="container fill-h">
     <div class="v-align">
       <div class="v-align-inner">
-        <h1 class="masthead__title">Sapni ng Crissot</h1>
-        <p class="masthead__shortdesc lead">
-          A Gathering to revive the Sapni Ng Crissot
-          Literary and Cultural Foundation.
-        </p>
+        <div class="masthead__content-container">
+          <h1 class="masthead__title">Sapni ng Crissot</h1>
+          <p class="masthead__shortdesc lead">
+            A Gathering to revive the Sapni Ng Crissot
+            Literary and Cultural Foundation.
+          </p>
+        </div>
 <!--         <small>
           <a href="#biography">Learn more...</a>
         </small> -->
@@ -40,8 +44,12 @@
   </div>
   <div class="container">
     <div class="masthead__announcement">
-      <h4>Announcement</h4>
-      <p>There's an event this saturday please come :)..</p>
+      <i class="masthead__announcement-icons ion-social-facebook"></i>
+      <i class="masthead__announcement-icons ion-social-instagram"></i>
+      <i class="masthead__announcement-icons ion-social-twitter"></i>
+      <i class="masthead__announcement-icons ion-email"></i>
+      <!-- <h4>Announcement</h4>
+      <p>There's an event this saturday please come :)..</p> -->
     </div>
   </div>
   <div class="masthead__scroll-down hidden-xs">
@@ -55,12 +63,50 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <div class="section__header text-center">
+        <!-- <div class="section__header text-center">
           <h1>Biography</h1>
           <small>of</small>
           <h3>Juan Crisostomo Soto-Caballa</h3>
-        </div>
+        </div> -->
         <div class="section__content">
+          <div class="card__list row">
+            
+            <div class="card__item col-xs-12 col-sm-4">
+              <div class="card__image-holder">
+                <div class="card__image-item" style="background-image:url(https://micotrip.files.wordpress.com/2013/03/capture.jpg)"></div>
+              </div>
+              <h3>Life</h3>
+              <p class="card__excerpt">
+                Learn the life of Juan Crissostomo Soto from childhood to his life as a poet
+              </p>
+              <span class="card__more">Read More</span>
+            </div>
+            
+            <div class="card__item col-xs-12 col-sm-4">
+              <div class="card__image-holder">
+                <div class="card__image-item" style="background-image:url(https://micotrip.files.wordpress.com/2013/03/capture.jpg)"></div>
+              </div>
+              <h3>Achievements</h3>
+              <p class="card__excerpt">
+                See the recognition and awards that was given to him
+              </p>
+              <span class="card__more">Read More</span>
+            </div>
+            
+            <div class="card__item col-xs-12 col-sm-4">
+              <div class="card__image-holder">
+                <div class="card__image-item" style="background-image:url(https://micotrip.files.wordpress.com/2013/03/capture.jpg)"></div>
+              </div>
+              <h3>Poetry</h3>
+              <p class="card__excerpt">
+                His creation of wonderful poetry
+              </p>
+              <span class="card__more">Read More</span>
+            </div>
+            
+          </div>
+        </div>
+       <!--  <div class="section__content--border">
           <p>
             Si Juan Crisostomo Soto ay isinilang sa Santa Ines, Bacolor, Pampanga.
             Tinagurian siyang Ama ng Panitikang Kapampangan. Pambihira ang kanyang
@@ -100,7 +146,7 @@
             - Wikipedia, Juan Cristomo Soto
           </p>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 

@@ -6,11 +6,13 @@ layout: default
   <div class="container fill-h">
     <div class="v-align">
       <div class="v-align-inner">
-        <h1 class="masthead__title">Sapni ng Crissot</h1>
-        <p class="masthead__shortdesc lead">
-          A Gathering to revive the Sapni Ng Crissot
-          Literary and Cultural Foundation.
-        </p>
+        <div class="masthead__content-container">
+          <h1 class="masthead__title">Sapni ng Crissot</h1>
+          <p class="masthead__shortdesc lead">
+            A Gathering to revive the Sapni Ng Crissot
+            Literary and Cultural Foundation.
+          </p>
+        </div>
 <!--         <small>
           <a href="#biography">Learn more...</a>
         </small> -->
@@ -19,8 +21,12 @@ layout: default
   </div>
   <div class="container">
     <div class="masthead__announcement">
-      <h4>Announcement</h4>
-      <p>There's an event this saturday please come :)..</p>
+      <i class="masthead__announcement-icons ion-social-facebook"></i>
+      <i class="masthead__announcement-icons ion-social-instagram"></i>
+      <i class="masthead__announcement-icons ion-social-twitter"></i>
+      <i class="masthead__announcement-icons ion-email"></i>
+      <!-- <h4>Announcement</h4>
+      <p>There's an event this saturday please come :)..</p> -->
     </div>
   </div>
   <div class="masthead__scroll-down hidden-xs">
@@ -34,12 +40,28 @@ layout: default
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <div class="section__header text-center">
+        <!-- <div class="section__header text-center">
           <h1>Biography</h1>
           <small>of</small>
           <h3>Juan Crisostomo Soto-Caballa</h3>
-        </div>
+        </div> -->
         <div class="section__content">
+          <div class="card__list row">
+            {% for card in site.data.sapni.crissot_data %}
+            <div class="card__item col-xs-12 col-sm-4">
+              <div class="card__image-holder">
+                <div class="card__image-item" style="background-image:url({{ card.image_url }})"></div>
+              </div>
+              <h3>{{ card.title }}</h3>
+              <p class="card__excerpt">
+                {{ card.excerpt }}
+              </p>
+              <span class="card__more">Read More</span>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+       <!--  <div class="section__content--border">
           <p>
             Si Juan Crisostomo Soto ay isinilang sa Santa Ines, Bacolor, Pampanga.
             Tinagurian siyang Ama ng Panitikang Kapampangan. Pambihira ang kanyang
@@ -79,7 +101,7 @@ layout: default
             - Wikipedia, Juan Cristomo Soto
           </p>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 
