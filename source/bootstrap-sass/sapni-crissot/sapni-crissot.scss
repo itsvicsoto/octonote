@@ -51,20 +51,42 @@ $spc-masthead-font-color: #FFE736; // yellow
     color: $spc-masthead-font-color;
 }
 
+    .masthead__nav {
+        position: fixed;
+        left: 0;
+        right: 0;
+        padding: 15px 40px;
+        z-index: 1000;
+        background-color: #373737;
+    }
+
+        .masthead__nav-brand {
+            font-family: "Alex Brush";
+            font-size: 35px;
+            font-weight: bold;
+            color: $spc-masthead-font-color;
+
+            &:hover {
+                color: $spc-masthead-font-color;
+            }
+        }
+
     .masthead__content-container {
-      max-width: 600px;
-      padding: 5px 20px;
-      background: $spc-gray-bg;
+        padding: 5px 20px;
+        margin: auto;
+        text-align: center;
+        background-color: rgba(255, 231, 54, 0.92);
+        color: #000;
+        //background: $spc-gray-bg;
     }
 
         .masthead__title {
               font-size: 60px;
-              font-weight: 300;
               text-transform: uppercase;
         }
 
         .masthead__shortdesc {
-              max-width: 400px;
+              //max-width: 400px;
         }
 
     .masthead__announcement {
