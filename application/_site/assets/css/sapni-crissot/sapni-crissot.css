@@ -448,9 +448,58 @@ i {
 }
 
 /*------------------------------------*\
-    #FOOTER
+    #NEWS
 \*------------------------------------*/
 /* line 457, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
+.news {
+  position: relative;
+  top: 50px;
+}
+
+/* line 462, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
+.news__header {
+  height: 500px;
+  background: #FCD037;
+}
+/* line 466, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
+.news__header h1 {
+  font-family: "Oswald";
+  font-size: 100px;
+}
+/* line 471, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
+.news__header a {
+  font-family: "Oswald";
+  color: #FFF;
+}
+
+/* line 478, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
+.news__feed {
+  height: 500px;
+  padding: 40px;
+  background: #1A1A1A;
+}
+
+/* line 484, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
+.news__feed-wrapper {
+  padding: 0 0 35px 0;
+  color: #fff;
+}
+
+/* line 489, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
+.news__feed-date {
+  color: #F00;
+  font-family: "Oswald";
+}
+
+/* line 496, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
+.news__feed-title > h3 {
+  margin: 10px 0;
+}
+
+/*------------------------------------*\
+    #FOOTER
+\*------------------------------------*/
+/* line 507, ../../../../source/bootstrap-sass/sapni-crissot/sapni-crissot.scss */
 .footer {
   padding: 10px 0 0 0;
   background: #3F3F3F;

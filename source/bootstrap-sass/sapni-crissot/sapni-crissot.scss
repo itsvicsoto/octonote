@@ -449,6 +449,56 @@ $spc-section-head-font-color: #FCD037; // yellow
     }
 
 
+
+/*------------------------------------*\
+    #NEWS
+\*------------------------------------*/
+
+.news {
+    position: relative;
+    top: 50px;
+}
+
+    .news__header {
+        height: 500px;
+        background: #FCD037;
+
+        h1 {
+            font-family: "Oswald";
+            font-size: 100px;
+        }
+
+        a {
+            font-family: "Oswald";
+            color: #FFF;
+        }
+
+    }
+
+    .news__feed {
+        height: 500px;
+        padding: 40px;
+        background: #1A1A1A;
+    }
+
+        .news__feed-wrapper {
+            padding: 0 0 35px 0;
+            color: #fff;
+        }
+
+            .news__feed-date {
+                color: #F00;
+                font-family: "Oswald";
+            }
+
+            .news__feed-title {
+
+                > h3 {
+                    margin: 10px 0;
+                }
+
+            }
+
 /*------------------------------------*\
     #FOOTER
 \*------------------------------------*/
