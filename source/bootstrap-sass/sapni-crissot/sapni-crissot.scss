@@ -15,6 +15,12 @@ $spc-section-head-font-color: #FCD037; // yellow
     UTILILTY CLASSES
 \*------------------------------------*/
 
+.btn {
+    font-family: "Oswald";
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
 
 .v-align {
     display: table;
@@ -186,19 +192,22 @@ $spc-section-head-font-color: #FCD037; // yellow
 }
 
 .section__content--md {
-    max-width: 500px;
+    max-width: 650px;
     margin: auto;
     text-align: center;
 
     > h1, h2, h3 {
         margin-bottom: 30px;
-        padding: 40px 0;
+        padding: 20px 0 10px 0;
         font-family: "Oswald";
         font-weight: bold;
-
         color: $spc-section-head-font-color;
         text-transform: uppercase;
-        border-bottom: 1px solid #FCD037;
+    }
+
+    hr {
+        border-top: 1px solid #FCD037;
+        margin: 40px 0;
     }
 
     > h1 {
@@ -402,6 +411,43 @@ $spc-section-head-font-color: #FCD037; // yellow
     }
 
 }
+
+
+/*------------------------------------*\
+    #SOCIAL
+\*------------------------------------*/
+
+.social {
+    position: relative;
+    bottom: -50px;
+}
+
+    .social-bg {
+        height: 300px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        color: #FFF;
+        font-size: 25px;
+        text-align: center;
+        font-family: Oswald;
+        text-transform: uppercase;
+    }
+
+    i {
+        font-size: 30px;
+    }
+
+    .social-ig {
+        background-image: url('/assets/images/poet-portrait.png');
+    }
+    .social-fb {
+        background-image: url('/assets/images/poet-first-sepia.png');
+    }
+    .social-twitter {
+        background-image: url('/assets/images/poet-lydia.png');
+    }
+
 
 /*------------------------------------*\
     #FOOTER

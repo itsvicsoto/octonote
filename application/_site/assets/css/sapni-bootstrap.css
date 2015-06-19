@@ -4475,15 +4475,15 @@ select[multiple].input-lg,
 
 /* line 63, ../../../source/bootstrap-sass/bootstrap/_buttons.scss */
 .btn-primary {
-  color: #fff;
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  color: #000;
+  background-color: #FCD037;
+  border-color: #fcca1e;
 }
 /* line 11, ../../../source/bootstrap-sass/bootstrap/mixins/_buttons.scss */
 .btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
-  color: #fff;
-  background-color: #286090;
-  border-color: #204d74;
+  color: #000;
+  background-color: #fbc405;
+  border-color: #d9a903;
 }
 /* line 21, ../../../source/bootstrap-sass/bootstrap/mixins/_buttons.scss */
 .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
@@ -4491,13 +4491,13 @@ select[multiple].input-lg,
 }
 /* line 29, ../../../source/bootstrap-sass/bootstrap/mixins/_buttons.scss */
 .btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, .btn-primary[disabled]:active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary.focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary.active {
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  background-color: #FCD037;
+  border-color: #fcca1e;
 }
 /* line 40, ../../../source/bootstrap-sass/bootstrap/mixins/_buttons.scss */
 .btn-primary .badge {
-  color: #337ab7;
-  background-color: #fff;
+  color: #FCD037;
+  background-color: #000;
 }
 
 /* line 67, ../../../source/bootstrap-sass/bootstrap/_buttons.scss */
