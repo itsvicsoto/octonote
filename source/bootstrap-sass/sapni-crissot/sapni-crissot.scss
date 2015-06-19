@@ -136,10 +136,30 @@ $spc-section-head-font-color: #FCD037; // yellow
 \*------------------------------------*/
 
 .callout {
-    padding: 20px 0 20px 0;
+    position: relative;
+    padding: 20px 0 10px 0;
+    margin-top: 50px;
     background: $spc-gray-bg;
     color: $spc-masthead-font-color;
+    font-family: "Merriweather";
 }
+
+    .callout__content {
+        max-width: 500px;
+        margin: auto;
+        font-size: 14px;
+    }
+    
+    .callout__floating-title {
+        position: absolute;
+        top: -70px;
+        width: 100%;
+        color: #373737;
+        font-weight: bold;
+        font-family: Oswald;
+        text-transform: uppercase;
+    }
+
 
 
 /*------------------------------------*\
@@ -170,15 +190,27 @@ $spc-section-head-font-color: #FCD037; // yellow
     margin: auto;
     text-align: center;
 
-    > h1 {
+    > h1, h2, h3 {
         margin-bottom: 30px;
         padding: 40px 0;
         font-family: "Oswald";
         font-weight: bold;
-        font-size: 80px;
+
         color: $spc-section-head-font-color;
         text-transform: uppercase;
         border-bottom: 1px solid #FCD037;
+    }
+
+    > h1 {
+        font-size: 80px;
+    }
+
+    > h2 {
+        font-size: 50px;
+    }
+
+    > h3 {
+        font-size: 30px
     }
 
     > p {
@@ -258,9 +290,13 @@ $spc-section-head-font-color: #FCD037; // yellow
     #the-poet-photo
 \*------------------------------------*/
 
+#father {
+    //background : #FFF6E9;
+}
+
 .the-poet-photo {
     position: relative;
-    min-height: 1000px;
+    min-height: 800px;
     margin: 20px auto;
     width: 960px;
 }
@@ -271,6 +307,33 @@ $spc-section-head-font-color: #FCD037; // yellow
         background-size: cover;
         background-position: center;
         color: #FFF;
+
+        .text-wrapper {
+
+            position: relative;
+            top: 279px;
+            background-color: rgba(255, 255, 255, 0.97);
+            margin: -10px;
+            padding: 0 15px;
+
+            > h1 {
+                color: #FCD037;
+                font-family: "Oswald";
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+
+            > p {
+                color: #000;
+                font-family: "Vidaloka";
+                font-size: 17px;
+            }
+
+            > a {
+                font-family: "Oswald";
+                color: #000;
+            }
+        }
 
         &.main {
             background-image: url("/assets/images/poet-first.png");
@@ -287,6 +350,14 @@ $spc-section-head-font-color: #FCD037; // yellow
             width: 400px;
             height: 300px;
         }
+
+        &.portrait {
+            background-image: url("/assets/images/poet-portrait.png");
+            left: 425px;
+            top: 443px;
+            width: 450px;
+            height: 300px;
+        }
     }
 
 
@@ -294,7 +365,9 @@ $spc-section-head-font-color: #FCD037; // yellow
     #FOUNDER
 \*------------------------------------*/
 
-.founder {}
+.founder {
+    margin-top: 50px;
+}
 
     .founder__item {
         padding-bottom: 20px;
