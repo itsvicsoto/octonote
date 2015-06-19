@@ -8,6 +8,7 @@
 
 $spc-gray-bg: #373737; // gray
 $spc-masthead-font-color: #FFE736; // yellow
+$spc-section-head-font-color: #FCD037; // yellow
 
 
 /*------------------------------------*\
@@ -164,6 +165,28 @@ $spc-masthead-font-color: #FFE736; // yellow
     margin: auto;
 }
 
+.section__content--md {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+
+    > h1 {
+        margin-bottom: 30px;
+        padding: 40px 0;
+        font-family: "Oswald";
+        font-weight: bold;
+        font-size: 80px;
+        color: $spc-section-head-font-color;
+        text-transform: uppercase;
+        border-bottom: 1px solid #FCD037;
+    }
+
+    > p {
+        font-family: "Vidaloka";
+        font-size: 17px;
+    }
+}
+
 .section__content--border {
     @extend .section__content;
     padding-left: 10px;
@@ -229,6 +252,43 @@ $spc-masthead-font-color: #FFE736; // yellow
                 background-size: cover;
                 background-position: center;
             }
+
+
+/*------------------------------------*\
+    #the-poet-photo
+\*------------------------------------*/
+
+.the-poet-photo {
+    position: relative;
+    min-height: 1000px;
+    margin: 20px auto;
+    width: 960px;
+}
+
+    .the-poet-photo__img {
+        position: absolute;
+        padding: 0 10px;
+        background-size: cover;
+        background-position: center;
+        color: #FFF;
+
+        &.main {
+            background-image: url("/assets/images/poet-first.png");
+            left: 300px;
+            top: 0;
+            width: 400px;
+            height: 500px;
+        }
+
+        &.lydia {
+            background-image: url("/assets/images/poet-lydia.png");
+            left: 0;
+            top: 250px;
+            width: 400px;
+            height: 300px;
+        }
+    }
+
 
 /*------------------------------------*\
     #FOUNDER
