@@ -1,6 +1,18 @@
-var express = require('express'),
-  config = require('./config'),
-  app = express();
+var express = require('express');
+var config = require('./config');
+var app = express();
+
+var githubOAuth = require('github-oauth')(config.githubConfig);
+
+githubOAuth.on('error', function (err) {
+  console.error('there was a login error', err)
+});
+
+githubOAuth.on('token', function (token, serverResponse) {
+  console.log('here is your shiny new github oauth token', token)
+  serverResponse.end(JSON.stringify(token))
+  // TODO save to cookies for angular access on login
+});
 
 app.get('/404', function (req, res) {
   res.send('hello world');
@@ -13,6 +25,14 @@ app.set('port', process.env.PORT || 5005);
 app.use('/', express.static(__dirname + config.root));
 app.use('/vendor', express.static(__dirname + '/../vendor'));
 app.use('/assets', express.static(__dirname + config.root + '/assets'));
+
+app.get('/login', function (req, res) {
+  return githubOAuth.login(req, res);
+});
+
+app.get('/auth/github/callback', function (req, res) {
+  return githubOAuth.callback(req, res);
+});
 
 app.get('*', function (req, res) {
   res.sendFile('index.html', {root: __dirname + config.root});

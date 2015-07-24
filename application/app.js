@@ -121,5 +121,9 @@ Octonote.controller('OctonoteController', [
 
     });
 
+    _this.githubLogin = function () {
+      location.href = '/login';
+    }
+
   }
 ]);

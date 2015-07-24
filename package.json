@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/itsvicsoto/express-ng-boilerplate",
   "dependencies": {
-    "express": "~4.10.6"
+    "express": "~4.10.6",
+    "github-oauth": "^0.2.1"
   }
 }
