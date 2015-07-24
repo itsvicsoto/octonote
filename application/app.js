@@ -107,7 +107,7 @@ Octonote.controller('OctonoteController', [
     _this.$on('$stateChangeSuccess', function (e, toState) {
 
       if (angular.isDefined(toState.data.pageTitle)) {
-        _this.coder.pageTitle = toState.data.pageTitle + ' | Octonote';
+        _this.octonote.pageTitle = toState.data.pageTitle + ' | Octonote';
       }
 
       /**

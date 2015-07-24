@@ -10,42 +10,56 @@ OctonoteRoutes.config([
       window.location.href = '/error/404';
     });
 
-    console.log('added log1');
-    console.log('added log2');
-
     $stateProvider
-      .state('dashboard', {
+      .state('home', {
         abstract: true,
         url: '/',
         views: {
           '': {
-            templateUrl: '/app/views/layouts/dashboard.html'
+            templateUrl: '/views/home/layout/home.html'
+          },
+          'header@home': {
+            templateUrl: '/views/home/includes/header.html'
+          },
+          'footer@home': {
+            templateUrl: '/views/home/includes/footer.html'
+          }
+        }
+      })
+      .state('home.default', {
+        url: '',
+        data: {
+          pageTitle: 'Home'
+        },
+        views: {
+          'content@home': {
+            templateUrl: '/views/home/home-default.html'
+          }
+        }
+      })
+      .state('dashboard', {
+        abstract: true,
+        url: '/dashboard',
+        views: {
+          '': {
+            templateUrl: '/views/dashboard/layout/dashboard.html'
           },
           'header@dashboard': {
-            templateUrl: '/app/views/includes/dashboard-header.html'
-          },
-          'leftPanel@dashboard': {
-            templateUrl: '/app/views/includes/dashboard-left-panel.html'
+            templateUrl: '/views/dashboard/includes/header.html'
           },
           'footer@dashboard': {
-            templateUrl: '/app/views/includes/dashboard-footer.html'
+            templateUrl: '/views/dashboard/includes/footer.html'
           }
         }
       })
       .state('dashboard.default', {
         url: '',
         data: {
-          pageTitle: 'Dashboard',
-          breadcrumb: [{
-            isStateParam: false,
-            isLastElem: true,
-            title: 'Dashboard',
-            routeState: 'dashboard.default'
-          }]
+          pageTitle: 'Dashboard'
         },
         views: {
           'content@dashboard': {
-            templateUrl: '/app/views/pages/dashboard-default.html'
+            templateUrl: '/views/dashboard/dashboard-default.html'
           }
         }
       });
