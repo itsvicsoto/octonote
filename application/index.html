@@ -1,1 +1,83 @@
-hello world
+<!doctype html>
+<html ng-app="Octonote" ng-controller="OctonoteController">
+<head>
+
+	<meta charset="utf-8">
+
+	<title ng-bind="coder.pageTitle">
+	</title>
+
+	<meta name="author" content="Pongstr Ordillo <twiz.tickler@gmail.com>">
+	<meta name="description" content="A port of twbs/Bootstrap using TORO.io Custom Styles">
+	<meta name="keywords" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Lato:300,900"/>
+	<link rel="stylesheet" href="/vendor/ionicons/css/ionicons.min.css"/>
+	<link rel="stylesheet" href="/vendor/octicons/octicons/octicons.css"/>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+
+<div ui-view class="coder-app-view"></div>
+
+<script type="text/ng-template" id="modalCreatePage.html">
+	<div class="modal-header">
+		<h3 class="modal-title slim">Create Page</h3>
+	</div>
+	<div class="modal-body">
+		<form>
+			<div class="form-group">
+				<label for="name">Page Name</label>
+				<input type="text" class="form-control" id="name" ng-model="modalCreatePage.requestObj.name" placeholder="Please name your page">
+			</div>
+		</form>
+	</div>
+	<div class="modal-footer">
+		<button class="btn btn-primary" ng-click="modalCreatePage.ok()">OK</button>
+		<button class="btn btn-warning" ng-click="modalCreatePage.cancel()">Cancel</button>
+	</div>
+</script>
+
+<!--Libraries-->
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="/vendor/angular/angular.js"></script>
+<script src="/vendor/angular-cookies/angular-cookies.min.js"></script>
+<script src="/vendor/ui-router/release/angular-ui-router.js"></script>
+<script src="/vendor/angular-bootstrap/ui-bootstrap.min.js"></script>
+<script src="/vendor/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+<!--ace-->
+<!--<script src="/vendor/angular-ui-ace/ui-ace.min.js"></script>-->
+<!--<script src="/vendor/ace-builds/src-min-noconflict/ace.js"></script>-->
+<!--<script src="/vendor/ace-builds/src-min-noconflict/ext-modelist.js"></script>-->
+<!--<script src="/vendor/ace-builds/src-min-noconflict/ext-themelist.js"></script>-->
+<!--<script src="/vendor/ace-builds/src-min-noconflict/ext-language_tools.js"></script>-->
+
+<!--Application Entry Point-->
+<script src="/app.js"></script>
+<script src="/routes.js"></script>
+
+<!--API Service-->
+<!--<script src="/app/services/CoderServices.js"></script>-->
+<!--<script src="/app/services/Model.js"></script>-->
+
+<!--Models-->
+
+<!--Directives-->
+
+<!--App Components-->
+
+<!--Components Projects-->
+
+</body>
+</html>

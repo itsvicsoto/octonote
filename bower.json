@@ -15,6 +15,14 @@
     "tests"
   ],
   "dependencies": {
-    "angular-ui-router": "~0.2.15"
+    "angular-ui-router": "~0.2.15",
+    "angular-cookies": "~1.4.3",
+    "angular-ui-ace": "~0.2.3",
+    "angular": "~1.4.3",
+    "bootstrap": "~3.3.5",
+    "ionicons": "~2.0.1",
+    "octicons": "~2.4.1",
+    "angular-bootstrap": "~0.13.1",
+    "ui-router": "~0.2.15"
   }
 }
