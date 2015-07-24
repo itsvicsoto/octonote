@@ -66,5 +66,6 @@ build
 .tmp
 logs
 *.log
+vendor
 
 

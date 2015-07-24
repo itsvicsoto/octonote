@@ -10,8 +10,8 @@ app.get('/404', function(req, res){
 app.set('port', process.env.PORT || 5005);
 
 // Default Application Directories that are served.
-app.use('/', express.static(__dirname + config.root + '/_site'));
-app.use('/app', express.static(__dirname + config.root + '/app'));
+app.use('/', express.static(__dirname + config.root));
+app.use('/vendor', express.static(__dirname + '/vendor'));
 app.use('/assets', express.static(__dirname + config.root + '/assets'));
 
 app.listen(app.get('port'), function () {
