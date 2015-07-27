@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "preinstall": "bower install"
+    "postinstall": "bower install"
   },
   "repository": {
     "type": "git",
