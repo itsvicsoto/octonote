@@ -8,6 +8,6 @@ module.exports = {
     baseURL: 'http://localhost:5005',
     loginURI: '/login',
     callbackURI: '/auth/github/callback',
-    scope: 'user' // optional, default scope is set to user
+    scope: 'user, gist' // optional, default scope is set to user
   }
 };

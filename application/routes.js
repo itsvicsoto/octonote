@@ -44,11 +44,8 @@ OctonoteRoutes.config([
           '': {
             templateUrl: '/views/dashboard/layout/dashboard.html'
           },
-          'header@dashboard': {
-            templateUrl: '/views/dashboard/includes/header.html'
-          },
-          'footer@dashboard': {
-            templateUrl: '/views/dashboard/includes/footer.html'
+          'toolbar@dashboard': {
+            templateUrl: '/views/dashboard/includes/toolbar.html'
           }
         }
       })

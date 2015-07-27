@@ -1,0 +1,269 @@
+@import "../octonote-bootstrap";
+@import "base";
+@import "compass";
+
+/*------------------------------------*\
+    VARIABLES
+\*------------------------------------*/
+
+$spc-gray-bg: #373737;
+// gray
+$spc-masthead-font-color: #FFE736;
+// yellow
+$spc-section-head-font-color: #FCD037;
+// yellow
+
+.octonote-ui-view {
+  height: 100%;
+}
+
+/*------------------------------------*\
+    UTILILTY CLASSES
+\*------------------------------------*/
+
+.v-align {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.v-align-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.fill-h {
+  height: 100%;
+}
+
+.fill-w {
+  width: 100%;
+}
+
+/*------------------------------------*\
+    #HEADER
+\*------------------------------------*/
+
+.header {
+  position: relative;
+  z-index: 2;
+  border-bottom: 1px solid #EFEFEF;
+}
+
+.header__container {
+  display: table;
+  padding: 25px 0;
+}
+
+.header__logo {
+  display: table-cell;
+  width: 70px;
+}
+
+.header__links-container {
+  display: table-cell;
+  text-align: right;
+}
+
+.header__links {
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: .3px;
+
+  > li {
+    display: inline-block;
+    padding: 0 1em;
+
+    a {
+      color: #fff;
+    }
+
+    &.header__link-github {
+      background-color: #000;
+      border-radius: 20px;
+      padding: 5px 10px;
+      color: #FFF;
+    }
+
+  }
+
+}
+
+.header__link-github {
+  background-color: #000;
+  border-radius: 20px;
+  padding: 5px 10px;
+  color: #FFF;
+}
+
+/*------------------------------------*\
+    #HOME
+\*------------------------------------*/
+
+.home {
+  height: 100%;
+}
+
+.home__bg {
+  position: fixed;
+  height: 100%;
+  background-image: url(https://download.unsplash.com/photo-1433354359170-23a4ae7338c6);
+  background-size: cover;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+}
+
+.home__centerbox {
+  width: 400px;
+  margin: auto;
+  padding: 20px 30px;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 3px 25px -9px rgba(140, 140, 140, 1);
+  -moz-box-shadow: 2px 3px 25px -9px rgba(140, 140, 140, 1);
+  box-shadow: 2px 3px 25px -9px rgba(140, 140, 140, 1);
+}
+
+.home__loginwithgithub {
+  background-color: #46E676;
+  padding: 15px 20px;
+  color: #000;
+  border-radius: 30px;
+  font-weight: bold;
+  float: right;
+}
+
+.home__content {
+  position: relative;
+  z-index: 2;
+  height: 600px;
+}
+
+/*------------------------------------*\
+    #FOOTER
+\*------------------------------------*/
+
+.footer {
+  position: relative;
+  z-index: 1;
+  padding: 10px 0 0 0;
+  background: #3F3F3F;
+  font-size: 70%;
+  color: #FFF;
+}
+
+/*------------------------------------*\
+    #TOOLBAR
+\*------------------------------------*/
+
+.toolbar {
+  position: relative;
+  width: 70px;
+  height: 100%;
+  float: left;
+  //border-right: 1px solid rgba(8, 208, 8, 0.49);
+  background-color: rgba(210, 210, 210, 0.12);
+  box-shadow: 2px 3px 14px -8px #8C8C8C;
+}
+
+.toolbar__links {
+}
+
+.toolbar__links--bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.toolbar__link {
+  padding: 5px 17px;
+  text-align: center;
+
+  > a {
+    font-size: 40px;
+  }
+}
+
+.toolbar__link--logo {
+  background-color: #46E676;
+}
+
+/*------------------------------------*\
+    #APP-CONTENT
+\*------------------------------------*/
+
+.app-content {
+  width: calc(100% - 70px);
+  height: 100%;
+  float: right;
+  overflow: auto;
+}
+
+.app-content__mini-panel,
+.app-content__large-panel {
+  float: left;
+  height: 100%;
+  overflow: auto;
+}
+
+.app-content__mini-panel {
+  width: 350px;
+  padding-top: 66px;
+}
+
+.app-content__mini-panel-header {
+  position: fixed;
+  top: 0;
+  height: 67px;
+  width: 350px;
+  background-color: #FAFAFA;
+  /* border-bottom: 1px solid #F5F5F5; */
+}
+
+.app-content__large-panel {
+  width: calc(100% - 350px);
+}
+
+/*------------------------------------*\
+    #GIST-ITEM
+\*------------------------------------*/
+
+.gist-item {
+  height: 120px;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ECECEC;
+  border-right: 1px solid #ECECEC;
+  box-shadow: -2px 3px 14px -9px #8C8C8C;
+  color: #4C4C4C;
+  cursor: pointer;
+  @include transition(all 150ms ease);
+
+  &:hover {
+    background: #46E676;
+
+    .gist-item__description {
+      border-top: 1px solid #33DA65;
+    }
+  }
+
+}
+
+.gist-item__filename {
+  font-weight: bold;
+  font-size: 12px;
+  color: #565656;
+}
+.gist-item__updated-at {
+  font-size: 9px;
+}
+.gist-item__description {
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px solid #F7F7F7;
+  font-size: 11px;
+  color: #4C4C4C;
+  @include transition(all 150ms ease);
+}

@@ -1,6 +1,7 @@
 var express = require('express');
 var config = require('./config');
 var app = express();
+var oauthGithub = require('./oauth-github');
 
 var githubOAuth = require('github-oauth')(config.githubConfig);
 
@@ -8,10 +9,11 @@ githubOAuth.on('error', function (err) {
   console.error('there was a login error', err)
 });
 
-githubOAuth.on('token', function (token, serverResponse) {
-  console.log('here is your shiny new github oauth token', token)
-  serverResponse.end(JSON.stringify(token))
+githubOAuth.on('token', function (token, res) {
+  console.log('here is your shiny new github oauth token', token);
+  console.log('serverResponse', token);
   // TODO save to cookies for angular access on login
+  oauthGithub.setAuthenticationCookies(token, res);
 });
 
 app.get('/404', function (req, res) {
