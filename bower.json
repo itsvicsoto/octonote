@@ -23,6 +23,7 @@
     "ionicons": "~2.0.1",
     "octicons": "~2.4.1",
     "angular-bootstrap": "~0.13.1",
-    "ui-router": "~0.2.15"
+    "ui-router": "~0.2.15",
+    "angular-highlightjs": "~0.4.1"
   }
 }

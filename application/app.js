@@ -4,6 +4,7 @@ var Octonote = angular.module('Octonote', [
   'ui.router',
   'ui.bootstrap',
   'ngCookies',
+  'hljs',
 
   // UI Router
   'octonote.routes',
@@ -11,14 +12,20 @@ var Octonote = angular.module('Octonote', [
   'OctonoteAPI',
 
   // Components
-  'octonote.component.gistList'
+  'octonote.component.gistList',
+  'octonote.component.gist',
+  'octonote.component.gistListFilesCollection',
+
+  // Ctrls
+  'octonote.controller.dashboardGist'
 ]);
 
 Octonote.config([
   '$provide',
   '$httpProvider',
   '$locationProvider',
-  function ($provide, $httpProvider, $locationProvider) {
+  'hljsServiceProvider',
+  function ($provide, $httpProvider, $locationProvider, hljsServiceProvider) {
     // Http Interceptors for Authenticated Requests
     $provide.factory('HttpInterceptor', [
         '$q',
@@ -75,6 +82,11 @@ Octonote.config([
     $locationProvider.html5Mode({
       enabled: true,
       requireBase: false
+    });
+
+    hljsServiceProvider.setOptions({
+      // replace tab with 4 spaces
+      tabReplace: '    '
     });
 
   }]);

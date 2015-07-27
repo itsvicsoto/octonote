@@ -59,6 +59,30 @@ OctonoteRoutes.config([
             templateUrl: '/views/dashboard/dashboard-default.html'
           }
         }
+      })
+      .state('dashboard.gist', {
+        url: '/gist?:gistId&:gistName',
+        data: {
+          pageTitle: 'Gist'
+        },
+        resolve: {
+          resolve_getGistDetails: function ($stateParams, OctonoteAPI) {
+
+            var gistId = $stateParams.gistId;
+
+            return OctonoteAPI.getGistById(gistId).then(function (response) {
+              return response;
+            });
+
+          }
+        },
+        views: {
+          'content@dashboard': {
+            controllerAs: 'gistvm',
+            controller: 'DashboardGistController',
+            templateUrl: '/views/dashboard/dashboard-gist.html'
+          }
+        }
       });
 
   }

@@ -1,0 +1,9 @@
+<div class="gist-item" ui-sref="dashboard.gist({ gistName : gistFileItem.gist.filename })">
+  <div class="gist-item__filename" ng-bind="gistFileItem.gist.filename"></div>
+  <div class="gist-item__updated-at">
+    <span>Last Updated : </span>
+    <span ng-bind="gistFileItem.gist.updated_at | date : date:'medium'"></span>
+  </div>
+  <div class="gist-item__description"
+       ng-bind="!gistFileItem.gist.content ? 'No Description Available' : gistFileItem.gist.content"></div>
+</div>

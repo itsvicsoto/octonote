@@ -1,0 +1,21 @@
+<div class="app-content__mini-panel">
+  <gist-list-files-collection ng-model="gistvm.gistDetails"></gist-list-files-collection>
+</div>
+<div class="app-content__large-panel">
+  <div class="app-content__large-panel-header">
+    <div class="app-content__large-panel-header__title">
+      <span ng-bind="gistvm.selectedFile"></span>
+    </div>
+    <div class="app-content__large-panel-header__meta">
+      <span>Viewing a Gist</span>
+    </div>
+  </div>
+  <div class="app-content__editor">
+    <div class="highlight-js__gist" hljs source="gistvm.gistDetails.files[gistvm.selectedFile].content">
+
+    </div>
+    <!--<pre>-->
+      <!--<code hljs ng-bind="gistvm.gistDetails.files[gistvm.selectedFile].content"></code>-->
+    <!--</pre>-->
+  </div>
+</div>

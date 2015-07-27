@@ -210,8 +210,10 @@ $spc-section-head-font-color: #FCD037;
 }
 
 .app-content__mini-panel {
+  height: calc(100% - 66px);
   width: 350px;
-  padding-top: 66px;
+  margin-top: 66px;
+  background-color: #FAFAFA;
 }
 
 .app-content__mini-panel-header {
@@ -220,11 +222,58 @@ $spc-section-head-font-color: #FCD037;
   height: 67px;
   width: 350px;
   background-color: #FAFAFA;
-  /* border-bottom: 1px solid #F5F5F5; */
+}
+
+.app-content__mini-panel-header__title {
+  padding: 10px 20px 0 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.app-content__mini-panel-header__meta {
+  padding: 5px 20px 0 10px;
+  font-size: 10px;
 }
 
 .app-content__large-panel {
   width: calc(100% - 350px);
+  height: calc(100% - 66px);
+  margin-top: 66px;
+}
+
+.app-content__large-panel-header {
+  position: fixed;
+  top: 0;
+  left: 419px;
+  height: 67px;
+  padding: 0 10px;
+  width: calc(100% - 350px);
+  background-color: #FAFAFA;
+  border-left: 1px solid #ECECEC;
+}
+
+.app-content__large-panel-header__title {
+  padding: 10px 20px 0 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.app-content__large-panel-header__meta {
+  padding: 5px 20px 0 10px;
+  font-size: 10px;
+}
+
+/*------------------------------------*\
+    #APP-CONTENT-DASHBOARD
+\*------------------------------------*/
+
+.app-content__dashboard {
+  padding: 0 20px;
+}
+
+.app-content__editor {
+  height: 100%;
+  padding: 0;
 }
 
 /*------------------------------------*\
@@ -237,6 +286,7 @@ $spc-section-head-font-color: #FCD037;
   border-bottom: 1px solid #ECECEC;
   border-right: 1px solid #ECECEC;
   box-shadow: -2px 3px 14px -9px #8C8C8C;
+  background: #fff;
   color: #4C4C4C;
   cursor: pointer;
   @include transition(all 150ms ease);
@@ -256,9 +306,11 @@ $spc-section-head-font-color: #FCD037;
   font-size: 12px;
   color: #565656;
 }
+
 .gist-item__updated-at {
   font-size: 9px;
 }
+
 .gist-item__description {
   margin-top: 15px;
   padding-top: 10px;
@@ -266,4 +318,23 @@ $spc-section-head-font-color: #FCD037;
   font-size: 11px;
   color: #4C4C4C;
   @include transition(all 150ms ease);
+  height: 44px;
+  overflow: hidden;
+}
+
+.highlight-js__gist {
+  height: 100%;
+
+  > pre {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    color: inherit;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 0;
+    border: 0;
+  }
+  .hljs {
+    height: 100%;
+  }
 }

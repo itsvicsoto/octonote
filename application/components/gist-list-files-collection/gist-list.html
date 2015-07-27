@@ -1,11 +1,11 @@
 <div class="app-content__mini-panel-header">
   <div class="app-content__mini-panel-header__title">Gists</div>
   <div class="app-content__mini-panel-header__meta">
-    <span ng-bind="gistList.gists.data.length"></span>
+    <span ng-bind="glfc.files.length"></span>
     <span>Gist Collection</span>
   </div>
 </div>
-<div ng-repeat="gist in gistList.gists.data">
-  <gist-item ng-model="gist"></gist-item>
+<div ng-repeat="gist in glfc.files">
+  <gist-file-item ng-model="gist"></gist-file-item>
 </div>
 

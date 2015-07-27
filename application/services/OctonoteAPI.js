@@ -8,8 +8,11 @@ OctonoteAPI.factory('OctonoteAPIEndpoints', [
 
     return {
       getGists: githubBaseUrl + '/gists',
-      getGistsPublic: '/gists/public',
-      getGistsStarred: '/gists/starred'
+      getGistsPublic: githubBaseUrl + '/gists/public',
+      getGistsStarred: githubBaseUrl + '/gists/starred',
+      getGistById: function (id) {
+        return githubBaseUrl + '/gists/' + id;
+      }
     }
   }
 ]);
@@ -22,6 +25,14 @@ OctonoteAPI.factory('OctonoteAPI', [
       getGists: function () {
         var options = {
           url: OctonoteAPIEndpoints.getGists,
+          method: 'GET'
+        };
+
+        return $http(options);
+      },
+      getGistById: function (id) {
+        var options = {
+          url: OctonoteAPIEndpoints.getGistById(id),
           method: 'GET'
         };
 

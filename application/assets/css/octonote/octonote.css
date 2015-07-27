@@ -8793,35 +8793,91 @@ html, body {
 
 /* line 212, ../../../../source/bootstrap-sass/octonote/octonote.scss */
 .app-content__mini-panel {
+  height: calc(100% - 66px);
   width: 350px;
-  padding-top: 66px;
+  margin-top: 66px;
+  background-color: #FAFAFA;
 }
 
-/* line 217, ../../../../source/bootstrap-sass/octonote/octonote.scss */
+/* line 219, ../../../../source/bootstrap-sass/octonote/octonote.scss */
 .app-content__mini-panel-header {
   position: fixed;
   top: 0;
   height: 67px;
   width: 350px;
   background-color: #FAFAFA;
-  /* border-bottom: 1px solid #F5F5F5; */
 }
 
-/* line 226, ../../../../source/bootstrap-sass/octonote/octonote.scss */
+/* line 227, ../../../../source/bootstrap-sass/octonote/octonote.scss */
+.app-content__mini-panel-header__title {
+  padding: 10px 20px 0 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* line 233, ../../../../source/bootstrap-sass/octonote/octonote.scss */
+.app-content__mini-panel-header__meta {
+  padding: 5px 20px 0 10px;
+  font-size: 10px;
+}
+
+/* line 238, ../../../../source/bootstrap-sass/octonote/octonote.scss */
 .app-content__large-panel {
   width: calc(100% - 350px);
+  height: calc(100% - 66px);
+  margin-top: 66px;
+}
+
+/* line 244, ../../../../source/bootstrap-sass/octonote/octonote.scss */
+.app-content__large-panel-header {
+  position: fixed;
+  top: 0;
+  left: 419px;
+  height: 67px;
+  padding: 0 10px;
+  width: calc(100% - 350px);
+  background-color: #FAFAFA;
+  border-left: 1px solid #ECECEC;
+}
+
+/* line 255, ../../../../source/bootstrap-sass/octonote/octonote.scss */
+.app-content__large-panel-header__title {
+  padding: 10px 20px 0 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* line 261, ../../../../source/bootstrap-sass/octonote/octonote.scss */
+.app-content__large-panel-header__meta {
+  padding: 5px 20px 0 10px;
+  font-size: 10px;
+}
+
+/*------------------------------------*\
+    #APP-CONTENT-DASHBOARD
+\*------------------------------------*/
+/* line 270, ../../../../source/bootstrap-sass/octonote/octonote.scss */
+.app-content__dashboard {
+  padding: 0 20px;
+}
+
+/* line 274, ../../../../source/bootstrap-sass/octonote/octonote.scss */
+.app-content__editor {
+  height: 100%;
+  padding: 0;
 }
 
 /*------------------------------------*\
     #GIST-ITEM
 \*------------------------------------*/
-/* line 234, ../../../../source/bootstrap-sass/octonote/octonote.scss */
+/* line 283, ../../../../source/bootstrap-sass/octonote/octonote.scss */
 .gist-item {
   height: 120px;
   padding: 10px 20px;
   border-bottom: 1px solid #ECECEC;
   border-right: 1px solid #ECECEC;
   box-shadow: -2px 3px 14px -9px #8C8C8C;
+  background: #fff;
   color: #4C4C4C;
   cursor: pointer;
   -moz-transition: all 150ms ease;
@@ -8829,28 +8885,28 @@ html, body {
   -webkit-transition: all 150ms ease;
   transition: all 150ms ease;
 }
-/* line 244, ../../../../source/bootstrap-sass/octonote/octonote.scss */
+/* line 294, ../../../../source/bootstrap-sass/octonote/octonote.scss */
 .gist-item:hover {
   background: #46E676;
 }
-/* line 247, ../../../../source/bootstrap-sass/octonote/octonote.scss */
+/* line 297, ../../../../source/bootstrap-sass/octonote/octonote.scss */
 .gist-item:hover .gist-item__description {
   border-top: 1px solid #33DA65;
 }
 
-/* line 254, ../../../../source/bootstrap-sass/octonote/octonote.scss */
+/* line 304, ../../../../source/bootstrap-sass/octonote/octonote.scss */
 .gist-item__filename {
   font-weight: bold;
   font-size: 12px;
   color: #565656;
 }
 
-/* line 259, ../../../../source/bootstrap-sass/octonote/octonote.scss */
+/* line 310, ../../../../source/bootstrap-sass/octonote/octonote.scss */
 .gist-item__updated-at {
   font-size: 9px;
 }
 
-/* line 262, ../../../../source/bootstrap-sass/octonote/octonote.scss */
+/* line 314, ../../../../source/bootstrap-sass/octonote/octonote.scss */
 .gist-item__description {
   margin-top: 15px;
   padding-top: 10px;
@@ -8861,4 +8917,25 @@ html, body {
   -o-transition: all 150ms ease;
   -webkit-transition: all 150ms ease;
   transition: all 150ms ease;
+  height: 44px;
+  overflow: hidden;
+}
+
+/* line 325, ../../../../source/bootstrap-sass/octonote/octonote.scss */
+.highlight-js__gist {
+  height: 100%;
+}
+/* line 328, ../../../../source/bootstrap-sass/octonote/octonote.scss */
+.highlight-js__gist > pre {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  color: inherit;
+  background-color: transparent;
+  border-radius: 0;
+  border: 0;
+}
+/* line 337, ../../../../source/bootstrap-sass/octonote/octonote.scss */
+.highlight-js__gist .hljs {
+  height: 100%;
 }
