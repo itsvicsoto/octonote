@@ -3,15 +3,13 @@ var config = require('./config');
 var app = express();
 var oauthGithub = require('./oauth-github');
 
-var githubOAuth = require('github-oauth')(config.githubConfig);
+var githubOAuth = require('github-oauth')(config.githubConfig[!process.env.ENV_VARIABLE ? 'development' : process.env.ENV_VARIABLE]);
 
 githubOAuth.on('error', function (err) {
   console.error('there was a login error', err)
 });
 
 githubOAuth.on('token', function (token, res) {
-  console.log('here is your shiny new github oauth token', token);
-  console.log('serverResponse', token);
   // TODO save to cookies for angular access on login
   oauthGithub.setAuthenticationCookies(token, res);
 });
