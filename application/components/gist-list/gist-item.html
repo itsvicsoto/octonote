@@ -1,5 +1,9 @@
 <div class="gist-item" ui-sref="dashboard.gist({ gistId : gistItem.gist.id, gistName: gistItem.files[0].filename })">
-  <div class="gist-item__filename" ng-bind="gistItem.files[0].filename"></div>
+  <div class="gist-item__filename" >
+    <span ng-bind="gistItem.files[0].filename"></span>
+    <span ng-if="!gistItem.gist.public" class="gist-item__lock ionicon ion-locked"></span>
+  </div>
+
   <div class="gist-item__updated-at">
     <span>Last Updated : </span>
     <span ng-bind="gistItem.gist.updated_at | date : date:'medium'"></span>

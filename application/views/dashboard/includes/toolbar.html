@@ -14,15 +14,15 @@
     </div>
   </div>
   <div class="toolbar__links">
-    <div class="toolbar__link">
-      <a href="">
+    <div class="toolbar__link" ng-class="{ 'active' : octonote.toState.name == 'dashboard.default' }">
+      <a ui-sref="dashboard.default">
         <span class="ionicon ion-ios-folder-outline"></span>
       </a>
     </div>
   </div>
   <div class="toolbar__links">
-    <div class="toolbar__link">
-      <a href="">
+    <div class="toolbar__link" ng-class="{ 'active' : octonote.toState.name == 'dashboard.starred' }">
+      <a ui-sref="dashboard.starred">
         <span class="ionicon ion-ios-star-outline"></span>
       </a>
     </div>

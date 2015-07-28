@@ -60,6 +60,17 @@ OctonoteRoutes.config([
           }
         }
       })
+      .state('dashboard.starred', {
+        url: '',
+        data: {
+          pageTitle: 'Starred'
+        },
+        views: {
+          'content@dashboard': {
+            templateUrl: '/views/dashboard/dashboard-starred.html'
+          }
+        }
+      })
       .state('dashboard.gist', {
         url: '/gist?:gistId&:gistName',
         data: {

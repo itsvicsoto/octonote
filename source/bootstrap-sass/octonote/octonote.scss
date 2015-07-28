@@ -181,9 +181,20 @@ $spc-section-head-font-color: #FCD037;
 .toolbar__link {
   padding: 5px 17px;
   text-align: center;
+  @include transition(all 150ms ease);
+
+  &.active {
+    background-color: #46E676;
+
+    > a {
+      color: #fff;
+    }
+
+  }
 
   > a {
     font-size: 40px;
+    @include transition(all 150ms ease);
   }
 }
 
@@ -305,6 +316,10 @@ $spc-section-head-font-color: #FCD037;
   font-weight: bold;
   font-size: 12px;
   color: #565656;
+}
+
+.gist-item__lock {
+  color: #FFAD00;
 }
 
 .gist-item__updated-at {

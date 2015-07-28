@@ -1,9 +1,10 @@
-express-boilerplate
-======================
+# Octonote
 
-ExpressJS Boilerplate for Starters
+=================================
+
+Welcome to Octonote Readme!
+
+This is a personal project for using GithubAPI for display user's gist. This
+project will evolve overtime.
 
 
-http://brettjankord.com/projects/style-guide-boilerplate/
-https://github.com/bjankord/Style-Guide-Boilerplate
-https://smacss.com/

@@ -5,6 +5,12 @@
     <span>Gist Collection</span>
   </div>
 </div>
+<div ng-if="gistList.gists.data.length == 0" class="gist-item">
+  <div class="gist-item__filename" >
+    <span>No Available Gist!</span>
+  </div>
+  <div class="gist-item__description">Start creating your gist now!</div>
+</div>
 <div ng-repeat="gist in gistList.gists.data">
   <gist-item ng-model="gist"></gist-item>
 </div>

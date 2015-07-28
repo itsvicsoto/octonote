@@ -5,22 +5,40 @@ GistList.directive('gistList', [
   function (OctonoteAPI) {
     return {
       restrict: 'E',
+      scope: {
+        options: '='
+      },
       templateUrl: '/components/gist-list/gist-list.html',
       controllerAs: 'gistList',
-      controller: function () {
+      controller: function ($scope) {
 
         var gistList = this;
 
-        OctonoteAPI.getGists().then(function (result) {
-          gistList.gists = result;
-        });
+
+        var options = {
+          isStarred: false
+        };
+
+        angular.merge(options, $scope.options);
+
+        if (!options.isStarred) {
+          OctonoteAPI.getGists().then(function (result) {
+            gistList.gists = result;
+          });
+        } else {
+          OctonoteAPI.getGistsStarred().then(function (result) {
+            gistList.gists = result;
+          });
+        }
+
 
       },
       link: function (scope) {
       }
     }
   }
-]);
+])
+;
 
 GistList.directive('gistItem', [
   function () {

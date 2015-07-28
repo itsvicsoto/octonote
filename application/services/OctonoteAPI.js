@@ -30,6 +30,14 @@ OctonoteAPI.factory('OctonoteAPI', [
 
         return $http(options);
       },
+      getGistsStarred: function () {
+        var options = {
+          url: OctonoteAPIEndpoints.getGistsStarred,
+          method: 'GET'
+        };
+
+        return $http(options);
+      },
       getGistById: function (id) {
         var options = {
           url: OctonoteAPIEndpoints.getGistById(id),
